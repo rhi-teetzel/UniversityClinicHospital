@@ -12,6 +12,7 @@ namespace UniversityClinicHospital
         //Constructors
         public Nurse(int numOfPatients) : base("Nurse Jack", 002, 50000, false)
         {
+            numOfPatients = 2;
             NumOfPatients = numOfPatients;
         }
 

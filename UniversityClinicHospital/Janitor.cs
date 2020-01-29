@@ -10,7 +10,8 @@ namespace UniversityClinicHospital
 
         public Janitor(bool sweeping) : base("Fran", 003, 40000, false)
         {
-            sweeping = Sweeping;
+            sweeping = true;
+            Sweeping = sweeping;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace UniversityClinicHospital
 
         public Receptionist(bool onPhone) : base("Jimmy", 004, 45000, false)
         {
+            onPhone = false;
             OnPhone = onPhone;
         }
     }

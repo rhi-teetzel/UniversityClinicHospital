@@ -13,7 +13,9 @@ namespace UniversityClinicHospital
         //constructors
         public Doctor(string specialty) : base("Dr. Sally", 001, 90000, false)
         {
+            specialty = "Heart";
             Specialty = specialty;
+            
         }
 
         
