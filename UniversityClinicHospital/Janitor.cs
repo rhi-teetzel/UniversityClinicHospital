@@ -8,5 +8,9 @@ namespace UniversityClinicHospital
     {
         public bool Sweeping { get; set; }
 
+        public Janitor(bool sweeping) : base("Fran", 003, 40000, false)
+        {
+            sweeping = Sweeping;
+        }
     }
 }

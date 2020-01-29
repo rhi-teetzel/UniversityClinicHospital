@@ -7,11 +7,16 @@ namespace UniversityClinicHospital
     public class Doctor : Employee
     {
         //properties
+        public string Specialty { get; set; } 
         
-        public string Specialty { get; set; }
-
 
         //constructors
+        public Doctor(string specialty) : base("Dr. Sally", 001, 90000, false)
+        {
+            Specialty = specialty;
+        }
+
+        
 
     }
 }
