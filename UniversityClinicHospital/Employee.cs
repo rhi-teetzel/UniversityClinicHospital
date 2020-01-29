@@ -4,7 +4,11 @@ using System.Text;
 
 namespace UniversityClinicHospital
 {
-    class Employee
+    public class Employee
     {
+        public string Name { get; set; }
+        public int ID { get; set; }
+        public int Salary { get; set; }
+        public bool Paid { get; set; }
     }
 }
