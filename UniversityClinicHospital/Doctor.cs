@@ -15,10 +15,13 @@ namespace UniversityClinicHospital
         {
             Specialty = specialty;
             Salary = 90000;
-
+        }
+        public override void ViewEmployeeInfo()
+        {
+            Console.WriteLine($"Employee: {Name} | Employee ID: {ID} | Specialty: {Specialty} | Employee has been paid: {Paid}");
         }
 
-        
+
 
     }
 }

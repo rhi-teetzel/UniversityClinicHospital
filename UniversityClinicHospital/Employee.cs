@@ -6,6 +6,10 @@ namespace UniversityClinicHospital
 {
     public class Employee
     {
+        //create List above objects
+        //list as a property
+        public List<Employee> employeesList = new List<Employee>();
+
         //Properties
         public string Name { get; set; }
         public int ID { get; set; }
@@ -25,7 +29,20 @@ namespace UniversityClinicHospital
             Paid = false;
         }
 
+        //methods
+        public void ViewAllEmployees()
+        {
+            foreach(Employee employee in employeesList)
+            {
+                employee.ViewEmployeeInfo();
+            }
+        }
+        public virtual void ViewEmployeeInfo()
+        {
+        }
 
 
+
+        
     }
 }

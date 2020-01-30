@@ -7,23 +7,20 @@ namespace UniversityClinicHospital
     {
         static void Main(string[] args)
         {
-            //create List above objects
-            List<Employee> employeesList = new List<Employee>();
-
-
             //create employee objects:
-            Doctor doctor = new Doctor("Dr. Sally", 001, "General Surgeon");
-            Nurse nurse = new Nurse("Jack", 002, 1);            
-            Janitor janitor = new Janitor("Fran", 003, true);
-            Receptionist receptionist = new Receptionist("Jimmy", 004, false);
+            Employee employee = new Employee();
+            Doctor doctor = new Doctor("Dr. Sally", 1001, "General Surgeon");
+            Nurse nurse = new Nurse("Jack", 1002, 1);            
+            Janitor janitor = new Janitor("Fran", 1003, true);
+            Receptionist receptionist = new Receptionist("Jimmy", 1004, false);
             Patient patient = new Patient("Bob Builder");
 
             //Populate List
-            employeesList.Add(doctor);
-            employeesList.Add(nurse);
-            employeesList.Add(janitor);
-            employeesList.Add(receptionist);
-           
+            employee.employeesList.Add(doctor);
+            employee.employeesList.Add(nurse);
+            employee.employeesList.Add(janitor);
+            employee.employeesList.Add(receptionist);
+
 
             //create menu
             string menuChoice = "";
@@ -43,6 +40,7 @@ namespace UniversityClinicHospital
                 switch (menuChoice)
                 {
                     case "1":
+                        employee.ViewAllEmployees();
                         break;
 
                     case "2":
