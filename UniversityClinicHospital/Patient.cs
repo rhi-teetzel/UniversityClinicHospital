@@ -10,14 +10,14 @@ namespace UniversityClinicHospital
         public int HealthLevel { get; set; } = 10;
         public string Name { get; set; } 
 
-        public Patient(string name, int bloodLevel, int healthLevel)
+        public Patient(string name)
         {
             Name = name;
-            BloodLevel = bloodLevel;
-            HealthLevel = healthLevel;
+            BloodLevel = 100;
+            HealthLevel = 50;
         }
-        Patient firstPatient = new Patient("Bob Builder", 100, 50);
-        Patient secondPatient = new Patient("Dora Explorer", 100, 25);
+        
+        
 
 
     }

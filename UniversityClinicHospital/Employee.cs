@@ -18,12 +18,11 @@ namespace UniversityClinicHospital
         {
 
         }
-        public Employee(string name, int id, int salary, bool paid)
+        public Employee(string name, int id)
         {
             Name = name;
             ID = id;
-            Salary = salary;
-            Paid = paid;
+            Paid = false;
         }
 
 

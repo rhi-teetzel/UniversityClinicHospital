@@ -6,6 +6,11 @@ namespace UniversityClinicHospital
     {
         static void Main(string[] args)
         {
+            //create List above objects
+            //create employee objects:
+            Doctor doctor = new Doctor("Dr. Sally", 001, "General Surgeon");
+            Patient patient = new Patient("Bob Builder");
+
             //create menu
             string menuChoice = "";
             bool userActive = true;
