@@ -12,9 +12,12 @@ namespace UniversityClinicHospital
 
         public Patient(string name, int bloodLevel, int healthLevel)
         {
-
+            Name = name;
             BloodLevel = bloodLevel;
             HealthLevel = healthLevel;
         }
+
+        
+
     }
 }
