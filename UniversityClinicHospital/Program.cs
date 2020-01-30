@@ -46,6 +46,8 @@ namespace UniversityClinicHospital
                         break;
 
                     case "2":
+                        Console.WriteLine("ACCOUNTS PAYABLE\n");
+                        employee.PayAllEmployees();
                         break;
 
                     case "3":

@@ -40,7 +40,23 @@ namespace UniversityClinicHospital
         public virtual void ViewEmployeeInfo()
         {
         }
-
+        public void PayAllEmployees()
+        {
+            foreach(Employee employee in employeesList)
+            {
+                if (Paid == false)
+                {
+                    employee.Paid = true;
+                    Console.WriteLine(employee.Name + " has now been PAID.");
+                }
+                else
+                {
+                    Console.WriteLine(employee.Name + " HAS ALREADY BEEN PAID THIS SESSION.");
+                }
+                
+            }
+            
+        }
 
 
         
