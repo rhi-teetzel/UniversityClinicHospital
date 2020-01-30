@@ -16,8 +16,9 @@ namespace UniversityClinicHospital
             BloodLevel = bloodLevel;
             HealthLevel = healthLevel;
         }
+        Patient firstPatient = new Patient("Bob Builder", 100, 50);
+        Patient secondPatient = new Patient("Dora Explorer", 100, 25);
 
-        
 
     }
 }
