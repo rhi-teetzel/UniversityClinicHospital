@@ -10,10 +10,11 @@ namespace UniversityClinicHospital
         public int NumOfPatients { get; set; }
 
         //Constructors
-        public Nurse(int numOfPatients) : base("Nurse Jack", 002, 50000, false)
+        public Nurse(string name, int id, int numOfPatients) : base(name, id)
         {
-            numOfPatients = 2;
+            
             NumOfPatients = numOfPatients;
+            Salary = 50000;
         }
 
     }

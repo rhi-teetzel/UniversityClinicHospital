@@ -9,6 +9,7 @@ namespace UniversityClinicHospital
             //create List above objects
             //create employee objects:
             Doctor doctor = new Doctor("Dr. Sally", 001, "General Surgeon");
+            Nurse nurse = new Nurse("Jack", 002, 1);
             Patient patient = new Patient("Bob Builder");
 
             //create menu
