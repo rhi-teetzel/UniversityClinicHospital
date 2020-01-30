@@ -8,10 +8,11 @@ namespace UniversityClinicHospital
     {
         public bool Sweeping { get; set; }
 
-        public Janitor(bool sweeping) : base("Fran", 003, 40000, false)
+        public Janitor(string name, int id, bool sweeping) : base(name, id)
         {
-            sweeping = true;
             Sweeping = sweeping;
+            Salary = 40000;
+            
         }
     }
 }

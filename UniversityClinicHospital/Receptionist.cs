@@ -8,10 +8,10 @@ namespace UniversityClinicHospital
     {
         public bool OnPhone { get; set; }
 
-        public Receptionist(bool onPhone) : base("Jimmy", 004, 45000, false)
+        public Receptionist(string name, int id, bool onPhone) : base(name, id)
         {
-            onPhone = false;
             OnPhone = onPhone;
+            Salary = 45000;
         }
     }
 }

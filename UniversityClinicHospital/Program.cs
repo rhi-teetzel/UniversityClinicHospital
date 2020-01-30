@@ -11,6 +11,8 @@ namespace UniversityClinicHospital
             Doctor doctor = new Doctor("Dr. Sally", 001, "General Surgeon");
             Nurse nurse = new Nurse("Jack", 002, 1);
             Patient patient = new Patient("Bob Builder");
+            Janitor janitor = new Janitor("Fran", 003, true);
+            Receptionist receptionist = new Receptionist("Jimmy", 004, false);
 
             //create menu
             string menuChoice = "";
