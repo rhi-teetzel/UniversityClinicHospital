@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UniversityClinicHospital
 {
@@ -7,12 +8,22 @@ namespace UniversityClinicHospital
         static void Main(string[] args)
         {
             //create List above objects
+            List<Employee> employeesList = new List<Employee>();
+
+
             //create employee objects:
             Doctor doctor = new Doctor("Dr. Sally", 001, "General Surgeon");
-            Nurse nurse = new Nurse("Jack", 002, 1);
-            Patient patient = new Patient("Bob Builder");
+            Nurse nurse = new Nurse("Jack", 002, 1);            
             Janitor janitor = new Janitor("Fran", 003, true);
             Receptionist receptionist = new Receptionist("Jimmy", 004, false);
+            Patient patient = new Patient("Bob Builder");
+
+            //Populate List
+            employeesList.Add(doctor);
+            employeesList.Add(nurse);
+            employeesList.Add(janitor);
+            employeesList.Add(receptionist);
+           
 
             //create menu
             string menuChoice = "";
