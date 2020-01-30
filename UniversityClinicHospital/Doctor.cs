@@ -18,7 +18,8 @@ namespace UniversityClinicHospital
         }
         public override void ViewEmployeeInfo()
         {
-            Console.WriteLine($"Employee: {Name} | Employee ID: {ID} | Specialty: {Specialty} | Employee has been paid: {Paid}");
+            Console.WriteLine($"\nDoctor: {Name} | Employee ID: {ID} | Specialty: {Specialty} | Employee Has Been Paid: {Paid}");
+            Console.WriteLine();
         }
 
 

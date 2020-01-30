@@ -36,11 +36,13 @@ namespace UniversityClinicHospital
                 Console.WriteLine("5. Draw Blood");
                 Console.WriteLine("6. Exit");
                 menuChoice = Console.ReadLine();
+                Console.Clear();
 
                 switch (menuChoice)
                 {
                     case "1":
-                        employee.ViewAllEmployees();
+                        Console.WriteLine("EMPLOYEE LIST");
+                        employee.ViewAllEmployees(); 
                         break;
 
                     case "2":

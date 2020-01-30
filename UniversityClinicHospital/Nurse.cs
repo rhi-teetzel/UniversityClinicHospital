@@ -17,5 +17,12 @@ namespace UniversityClinicHospital
             Salary = 50000;
         }
 
+        //Methods
+        public override void ViewEmployeeInfo()
+        {
+            Console.WriteLine($"Nurse: {Name} | Employee ID: {ID} | Current Number of Patients: {NumOfPatients} | Employee Has Been Paid: {Paid}");
+            Console.WriteLine();
+        }
+
     }
 }

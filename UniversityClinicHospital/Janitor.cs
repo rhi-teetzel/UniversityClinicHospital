@@ -14,5 +14,21 @@ namespace UniversityClinicHospital
             Salary = 40000;
             
         }
+
+        public override void ViewEmployeeInfo()
+        {
+            Console.WriteLine($"Janitor: {Name} | Employee ID: {ID} | Employee has been paid: {Paid}");
+
+            if (Sweeping == true)
+            {
+                Console.WriteLine($"Current Status: {Name} is sweeping.");
+            }
+
+            else
+            {
+                Console.WriteLine($"Current Status: {Name} is not sweeping.");
+            }
+            Console.WriteLine();
+        }
     }
 }
