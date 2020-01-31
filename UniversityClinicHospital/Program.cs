@@ -15,11 +15,14 @@ namespace UniversityClinicHospital
             Receptionist receptionist = new Receptionist("Jimmy", 1004, false);
             Patient patient = new Patient("Bob Builder");
 
-            //Populate List
+            //Populate Lists
             employee.employeesList.Add(doctor);
             employee.employeesList.Add(nurse);
             employee.employeesList.Add(janitor);
             employee.employeesList.Add(receptionist);
+
+            employee.medicalStaff.Add(doctor);
+            employee.medicalStaff.Add(nurse);
 
 
             //create menu

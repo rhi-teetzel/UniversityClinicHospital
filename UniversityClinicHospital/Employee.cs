@@ -9,6 +9,7 @@ namespace UniversityClinicHospital
         //create List above objects
         //list as a property
         public List<Employee> employeesList = new List<Employee>();
+        public List<Employee> medicalStaff = new List<Employee>();
 
         //Properties
         public string Name { get; set; }
@@ -26,7 +27,7 @@ namespace UniversityClinicHospital
         {
             Name = name;
             ID = id;
-            Paid = false;
+            
         }
 
         //methods
@@ -44,14 +45,16 @@ namespace UniversityClinicHospital
         {
             foreach(Employee employee in employeesList)
             {
-                if (Paid == false)
+                if (employee.Paid == false)
                 {
                     employee.Paid = true;
                     Console.WriteLine(employee.Name + " has now been PAID.");
                 }
-                else
+                else 
                 {
+                    
                     Console.WriteLine(employee.Name + " HAS ALREADY BEEN PAID THIS SESSION.");
+                    
                 }
                 
             }
