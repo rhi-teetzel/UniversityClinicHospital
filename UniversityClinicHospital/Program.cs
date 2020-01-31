@@ -22,10 +22,6 @@ namespace UniversityClinicHospital
             employee.employeesList.Add(janitor);
             employee.employeesList.Add(receptionist);
 
-            //all medical staff list
-            employee.medicalStaff.Add(doctor);
-            employee.medicalStaff.Add(nurse);
-
 
             //create menu
             string menuChoice = "";
@@ -60,8 +56,6 @@ namespace UniversityClinicHospital
                         Console.WriteLine("VIEW PATIENT STATUS\n");
                         patient.ViewPatientStatus();
                         break;
-                    
-                       
                 
                     case "4":
                         Console.WriteLine("CARE FOR PATIENT\n");
@@ -86,14 +80,30 @@ namespace UniversityClinicHospital
                             break;
                         }
                         break;
-                        
-
-                           
-                                
-                        
 
                     case "5":
                         Console.WriteLine("DRAW BLOOD\n");
+                        Console.WriteLine("Please Select a Medical Employee:");
+                        Console.WriteLine($"1. {doctor.Name} ");
+                        Console.WriteLine($"2. Nurse {nurse.Name}");
+                        medicalMenuChoice = Console.ReadLine();
+
+                        if (medicalMenuChoice == "1")
+                        {
+                            patient.BloodLevel -= 20;
+                            Console.WriteLine($" \n{doctor.Name} has drawn blood from {patient.Name}. Blood level has decreased to {patient.BloodLevel}");
+                        }
+
+                        else if (medicalMenuChoice == "2")
+                        {
+                            patient.BloodLevel += 10;
+                            Console.WriteLine($" \nNurse {nurse.Name} has drawn blood for {patient.Name} Blood level has decreased to {patient.BloodLevel}");
+                        }
+                        else
+                        {
+                            break;
+                        }
+                        break;
                         break;
 
                     case "6":

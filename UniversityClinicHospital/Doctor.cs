@@ -23,13 +23,7 @@ namespace UniversityClinicHospital
             Console.WriteLine($"\nDoctor: {Name} | Employee ID: {ID} | Specialty: {Specialty} | Employee Has Been Paid: {Paid}");
             Console.WriteLine();
         }
-        public override void CareForPatients()
-        {
-            patient.HealthLevel += 20;
-            Console.WriteLine($"PATIENT CARE HISTORY" +
-                $" \n{Name} has cared for { patient.Name} and his health level has increased to {patient.HealthLevel}");
-
-        }
+       
 
 
 
