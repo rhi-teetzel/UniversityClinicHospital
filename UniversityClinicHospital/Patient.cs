@@ -6,8 +6,8 @@ namespace UniversityClinicHospital
 {
    public class Patient
     {
-        public int BloodLevel { get; set; } = 20;
-        public int HealthLevel { get; set; } = 10;
+        public int BloodLevel { get; set; }
+        public int HealthLevel { get; set; }
         public string Name { get; set; } 
 
         public Patient(string name)
@@ -15,6 +15,13 @@ namespace UniversityClinicHospital
             Name = name;
             BloodLevel = 100;
             HealthLevel = 50;
+        }
+
+        //method
+        public void ViewPatientStatus()
+        {
+            Console.WriteLine($"\nPatiet: {Name} | Blood Level: {BloodLevel} | Health Level: {HealthLevel}\n");
+
         }
         
         

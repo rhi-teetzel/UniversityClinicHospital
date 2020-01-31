@@ -13,14 +13,16 @@ namespace UniversityClinicHospital
             Nurse nurse = new Nurse("Jack", 1002, 1);            
             Janitor janitor = new Janitor("Fran", 1003, true);
             Receptionist receptionist = new Receptionist("Jimmy", 1004, false);
+
             Patient patient = new Patient("Bob Builder");
 
-            //Populate Lists
+            //Populate all emplyee Lists
             employee.employeesList.Add(doctor);
             employee.employeesList.Add(nurse);
             employee.employeesList.Add(janitor);
             employee.employeesList.Add(receptionist);
 
+            //all medical staff list
             employee.medicalStaff.Add(doctor);
             employee.medicalStaff.Add(nurse);
 
@@ -54,12 +56,16 @@ namespace UniversityClinicHospital
                         break;
 
                     case "3":
+                       Console.WriteLine("VIEW PATIENT STATUS\n");
+                        patient.ViewPatientStatus();
                         break;
 
                     case "4":
+                        Console.WriteLine("CARE FOR PATIENT\n");
                         break;
 
                     case "5":
+                        Console.WriteLine("DRAW BLOOD\n");
                         break;
 
                     case "6":

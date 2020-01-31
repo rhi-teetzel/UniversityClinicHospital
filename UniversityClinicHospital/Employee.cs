@@ -60,7 +60,10 @@ namespace UniversityClinicHospital
             }
             
         }
+        public virtual void CareForPatients()
+        {
 
+        }
 
         
     }
