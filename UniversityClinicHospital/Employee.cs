@@ -37,7 +37,17 @@ namespace UniversityClinicHospital
             {
                 employee.ViewEmployeeInfo();
             }
+
         }
+
+        public void ViewMedicalEmployees()
+        {
+            foreach(Employee medicalEmployee in medicalStaff)
+            {
+                Console.WriteLine(medicalEmployee.Name);
+            }
+        }
+
         public virtual void ViewEmployeeInfo()
         {
         }

@@ -26,8 +26,8 @@ namespace UniversityClinicHospital
         public override void CareForPatients()
         {
             patient.HealthLevel += 20;
-            Console.WriteLine($"PATTIENT CARE HISTORY" +
-                $" \n{Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+            Console.WriteLine($"PATIENT CARE HISTORY" +
+                $" \n{Name} has cared for { patient.Name} and his health level has increased to {patient.HealthLevel}");
 
         }
 

@@ -29,6 +29,7 @@ namespace UniversityClinicHospital
 
             //create menu
             string menuChoice = "";
+            string medicalMenuChoice = "";
             bool userActive = true;
 
             while (userActive)
@@ -47,7 +48,7 @@ namespace UniversityClinicHospital
                 {
                     case "1":
                         Console.WriteLine("EMPLOYEE LIST");
-                        employee.ViewAllEmployees(); 
+                        employee.ViewAllEmployees();
                         break;
 
                     case "2":
@@ -56,15 +57,40 @@ namespace UniversityClinicHospital
                         break;
 
                     case "3":
-                       Console.WriteLine("VIEW PATIENT STATUS\n");
+                        Console.WriteLine("VIEW PATIENT STATUS\n");
                         patient.ViewPatientStatus();
                         break;
-
+                    
+                       
+                
                     case "4":
                         Console.WriteLine("CARE FOR PATIENT\n");
+                        Console.WriteLine("Please Select a Medical Employee:");
+                        Console.WriteLine($"1. {doctor.Name} ");
+                        Console.WriteLine($"2. Nurse {nurse.Name}");
+                        medicalMenuChoice = Console.ReadLine();
 
+                        if (medicalMenuChoice == "1")
+                        {
+                            patient.HealthLevel += 20;
+                            Console.WriteLine($" \n{doctor.Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+                        }
 
+                        else if (medicalMenuChoice == "2")
+                        {
+                            patient.HealthLevel += 30;
+                            Console.WriteLine($" \nNurse {nurse.Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+                        }
+                        else
+                        {
+                            break;
+                        }
                         break;
+                        
+
+                           
+                                
+                        
 
                     case "5":
                         Console.WriteLine("DRAW BLOOD\n");
