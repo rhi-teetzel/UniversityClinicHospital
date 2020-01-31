@@ -6,8 +6,6 @@ namespace UniversityClinicHospital
 {
     public class Nurse : Employee
     {
-        Patient patient = new Patient();
-
         //Properties
         public int NumOfPatients { get; set; }
 

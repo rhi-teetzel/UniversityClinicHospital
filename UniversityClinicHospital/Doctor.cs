@@ -6,8 +6,6 @@ namespace UniversityClinicHospital
 {
     public class Doctor : Employee
     {
-        Patient patient = new Patient();
-
         //properties
         public string Specialty { get; set; } 
         

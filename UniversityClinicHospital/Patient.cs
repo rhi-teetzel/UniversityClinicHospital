@@ -24,7 +24,7 @@ namespace UniversityClinicHospital
         //method
         public void ViewPatientStatus()
         {
-            Console.WriteLine($"\nPatiet: {Name} | Blood Level: {BloodLevel} | Health Level: {HealthLevel}\n");
+            Console.WriteLine($"\nPatient: {Name} | Blood Level: {BloodLevel} | Health Level: {HealthLevel}\n");
 
         }
         
