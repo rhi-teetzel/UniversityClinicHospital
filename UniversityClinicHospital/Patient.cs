@@ -16,10 +16,7 @@ namespace UniversityClinicHospital
             BloodLevel = 100;
             HealthLevel = 50;
         }
-        public Patient()
-        {
-
-        }
+        
 
         //method
         public void ViewPatientStatus()

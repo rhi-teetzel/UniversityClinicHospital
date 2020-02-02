@@ -6,6 +6,11 @@ namespace UniversityClinicHospital
 {
     public class Doctor : Employee
     {
+        Patient patient = new Patient("Bob Builder");
+        
+        
+
+
         //properties
         public string Specialty { get; set; } 
         
@@ -21,7 +26,14 @@ namespace UniversityClinicHospital
             Console.WriteLine($"\nDoctor: {Name} | Employee ID: {ID} | Specialty: {Specialty} | Employee Has Been Paid: {Paid}");
             Console.WriteLine();
         }
-       
+
+        //methods
+
+        public override void CareForPatients()
+        {
+            patient.HealthLevel += 20;
+            Console.WriteLine($" \n{Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+        }
 
 
 

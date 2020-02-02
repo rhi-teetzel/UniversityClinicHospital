@@ -75,6 +75,8 @@ namespace UniversityClinicHospital
 
         }
         
+        public virtual void DrawBlood()
+        { }
 
     }
 }

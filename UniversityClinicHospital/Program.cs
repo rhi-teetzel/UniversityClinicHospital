@@ -66,14 +66,12 @@ namespace UniversityClinicHospital
 
                         if (medicalMenuChoice == "1")
                         {
-                            patient.HealthLevel += 20;
-                            Console.WriteLine($" \n{doctor.Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+                            doctor.CareForPatients();
                         }
 
                         else if (medicalMenuChoice == "2")
                         {
-                            patient.HealthLevel += 30;
-                            Console.WriteLine($" \nNurse {nurse.Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
+                            nurse.CareForPatients();
                         }
                         else
                         {
