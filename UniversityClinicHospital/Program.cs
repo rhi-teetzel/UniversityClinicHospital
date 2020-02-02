@@ -66,12 +66,12 @@ namespace UniversityClinicHospital
 
                         if (medicalMenuChoice == "1")
                         {
-                            doctor.CareForPatients();
+                            doctor.CareForPatients(patient);
                         }
 
                         else if (medicalMenuChoice == "2")
                         {
-                            nurse.CareForPatients();
+                            nurse.CareForPatients(patient);
                         }
                         else
                         {
@@ -88,12 +88,12 @@ namespace UniversityClinicHospital
 
                         if (medicalMenuChoice == "1")
                         {
-                            doctor.DrawBlood();
+                            doctor.DrawBlood(patient);
                         }
 
                         else if (medicalMenuChoice == "2")
                         {
-                            nurse.DrawBlood();
+                            nurse.DrawBlood(patient);
                         }
                         else
                         {

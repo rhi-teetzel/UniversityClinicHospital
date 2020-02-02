@@ -70,11 +70,11 @@ namespace UniversityClinicHospital
             }
             
         }
-        public virtual void CareForPatients()
+        public virtual void CareForPatients(Patient patient)
         {
         }
         
-        public virtual void DrawBlood()
+        public virtual void DrawBlood(Patient patient)
         { 
         }
 
