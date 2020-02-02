@@ -88,14 +88,12 @@ namespace UniversityClinicHospital
 
                         if (medicalMenuChoice == "1")
                         {
-                            patient.BloodLevel -= 20;
-                            Console.WriteLine($" \n{doctor.Name} has drawn blood from {patient.Name}and his blood level has decreased to {patient.BloodLevel}");
+                            doctor.DrawBlood();
                         }
 
                         else if (medicalMenuChoice == "2")
                         {
-                            patient.BloodLevel += 10;
-                            Console.WriteLine($" \nNurse {nurse.Name} has drawn blood for {patient.Name} and his blood level has decreased to {patient.BloodLevel}");
+                            nurse.DrawBlood();
                         }
                         else
                         {

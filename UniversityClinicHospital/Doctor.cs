@@ -35,6 +35,11 @@ namespace UniversityClinicHospital
             Console.WriteLine($" \n{Name} has cared for {patient.Name} and his health level has increased to {patient.HealthLevel}");
         }
 
+        public override void DrawBlood()
+        {
+            patient.BloodLevel -= 20;
+            Console.WriteLine($" \n{Name} has drawn blood from {patient.Name} and his blood level has decreased to {patient.BloodLevel}");
+        }
 
 
     }

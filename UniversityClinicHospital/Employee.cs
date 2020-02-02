@@ -72,11 +72,11 @@ namespace UniversityClinicHospital
         }
         public virtual void CareForPatients()
         {
-
         }
         
         public virtual void DrawBlood()
-        { }
+        { 
+        }
 
     }
 }
